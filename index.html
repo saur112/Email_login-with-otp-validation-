@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Animated Login Form | CodingNepal</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="./script.js"></script>
+</head>
+
+<body>
+  
+  <div class="center" id="main">
+    <h1>Login</h1>
+    <div class="form">
+      <div class="txt_field">
+        
+        <input type="email" id="email" required>
+        <span></span>
+        <label>Email Address</label>
+      </div>
+      <div>
+        <div class=" txt_field otpverify">
+          <input type="text" id="otp_inp" >
+          <span></span>
+          <label>OTP</label>
+        
+        </div>
+        
+        </div>
+
+        <div class="res otpverify">
+          <p id="msg"></p>
+          <div class="pass" id="otp_btn">verify</div>
+        </div> 
+
+      </div>
+
+      <div>
+        <button onclick="sendOTP()" id="login" class="btn">Send OTP</button>
+      </div>
+
+      <div>
+        <p id="indicate"></p>
+      </div>
+  
+    <!-- </form> -->
+    </div>
+  </div>
+
+  <div id="homePage" style="display: none;">
+    <h1>Welcome</h1>
+    <p id="welcomeMessage"></p>
+    <button  id="logout" onclick="logout()">Logout</button>
+</div>
+</body>
+
+</html>
